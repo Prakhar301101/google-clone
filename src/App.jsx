@@ -3,8 +3,10 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 const App = () => {
 
+  //state handling the search input
   const[input,setInput]=useState('');
  
+  //function to clear the input field on buttonclick
   const handleClear=()=>{
     setInput('');
   }
@@ -16,7 +18,7 @@ const App = () => {
       <Header />
       <section className="mt-8 flex flex-col items-center w-full gap-4">
         <div className="flex w-[30%] sm:w-[40%] md:w-full justify-center">
-          <img src="src\assets\googlelogo_light_color_272x92dp.png"></img>
+          <img src="googlelogo_light_color_272x92dp.png"></img>
         </div>
         <div className="flex justify-between gap-2 hover:bg-zinc-700 active:bg-gray-700 text-slate-50 border-[1.5px] border-zinc-600 w-[80%] sm:w-[75%] md:w-[60%] lg:w-[40%] rounded-3xl py-1 px-2 md:py-2 md:px-4 shadow-lg text-[6px] sm:text-[10px] md:text-sm">
           <div className="flex items-center text-sm md:text-xl text-zinc-500 ">

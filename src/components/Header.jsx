@@ -1,4 +1,4 @@
-
+//header component
 
 const Header = () => {
   return (
@@ -19,7 +19,7 @@ const Header = () => {
             <div className="rounded-full cursor-pointer px-1 md:px-2 hover:bg-slate-800">
               <img
                 className="h-3 sm:h-5 md:h-8 rounded-full"
-                src="src\assets\pngegg.png"
+                src="pngegg.png"
               ></img>
             </div>
           </div>

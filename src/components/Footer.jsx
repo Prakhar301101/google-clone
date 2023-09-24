@@ -1,5 +1,4 @@
-
-
+//footer component
 const Footer = () => {
   return (
     <div className="mt-auto w-full flex flex-col bg-zinc-900 text-gray-400">

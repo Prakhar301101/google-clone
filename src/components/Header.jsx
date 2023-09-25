@@ -13,12 +13,12 @@ const Header = () => {
             </li>
           </ul>
           <div className="flex justify-center">
-            <div className="flex items-center text-[6px] sm:text-[10px] md:text-sm cursor-pointer rounded-full px-1 md:px-3 hover:bg-slate-800">
+            <div className="flex items-center text-[6px] sm:text-base md:text-lg cursor-pointer rounded-full px-1 md:px-3 hover:bg-slate-800">
               <ion-icon name="apps"></ion-icon>
             </div>
-            <div className="rounded-full cursor-pointer px-1 md:px-2 hover:bg-slate-800">
+            <div className="rounded-full cursor-pointer p-1 hover:bg-slate-800">
               <img
-                className="h-3 sm:h-5 md:h-8 rounded-full"
+                className="h-2 sm:h-4 md:h-5 lg:h-6 rounded-full"
                 src="pngegg.png"
               ></img>
             </div>

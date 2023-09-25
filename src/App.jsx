@@ -16,7 +16,7 @@ const App = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
-      <section className="mt-12 md:mt-16 flex flex-col items-center w-full gap-4">
+      <section className="mt-12 md:mt-16 flex flex-col items-center w-full gap-3 md:gap-7">
         <div className="flex w-[30%] sm:w-[40%] md:w-full justify-center">
           <img src="googlelogo_light_color_272x92dp.png"></img>
         </div>

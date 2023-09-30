@@ -1,17 +1,29 @@
 import { useState } from 'react';
+// import { Link, useNavigate } from 'react-router-dom';
 import Footer from './components/Footer';
 import Header from './components/Header';
 const App = () => {
 
   //state handling the search input
   const[input,setInput]=useState('');
- 
+  const[url,setURL]=useState('');
   //function to clear the input field on buttonclick
   const handleClear=()=>{
     setInput('');
   }
 
-
+  const handleSearch=()=>{
+    let temp='https://www.google.com/search?q=';
+    let query=''; 
+    for(let i=0;i<input.length;i++){
+      if(input.charAt(i)==' '){
+         query+='+';
+      }
+      else query+=input.charAt(i);
+    }
+    query=temp+query;
+    setURL(query);
+  }
  
   return (
     <div className="min-h-screen flex flex-col">
@@ -39,8 +51,8 @@ const App = () => {
           </div>
         </div>
         <div className="text-slate-50 flex gap-1 md:gap-3">
-          <button className="bg-zinc-800 px-2 md:px-4 py-1 md:py-2 rounded-md text-[6px] sm:text-[10px] md:text-sm hover:border-[1.5px] hover:border-zinc-600">
-            Google Search
+          <button onClick={handleSearch} className="bg-zinc-800 px-2 md:px-4 py-1 md:py-2 rounded-md text-[6px] sm:text-[10px] md:text-sm hover:border-[1.5px] hover:border-zinc-600">
+            <a href={url}>Google Search</a>
           </button>
           <button className="bg-zinc-800 px-2 md:px-4 py-1 md:py-2 rounded-md text-[6px] sm:text-[10px] md:text-sm hover:border-[1.5px] hover:border-zinc-600 ">
             I&apos;m Feeling Lucky
